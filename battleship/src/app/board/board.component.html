@@ -1,0 +1,18 @@
+<div class="computersBoard">
+  <div *ngFor="let col of computersBoard; index as columnIndex" >
+    <div *ngFor="let row of col; index as rowIndex" class="cell" [ngClass]="{'hit': computersBoard[columnIndex][rowIndex].hit, 'shipHit': computersBoard[columnIndex][rowIndex].hit && computersBoard[columnIndex][rowIndex].shipHit }">
+      <div  (click)="onAttack(computersBoard[columnIndex][rowIndex])">
+        {{columnIndex}}{{rowIndex}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div *ngFor="let col of playersBoard; index as columnIndex" style="display: flex;">
+  <div *ngFor="let row of col; index as rowIndex" style="flex-direction: row;">
+    <div style="height: 1rem; width: 1 rem; border: 1px solid red;">
+      {{columnIndex}}{{rowIndex}}
+    </div>
+  </div>
+</div>

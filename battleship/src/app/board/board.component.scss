@@ -1,0 +1,20 @@
+.computersBoard{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.hit{
+    background-color: black;
+}
+
+.shipHit{
+    background: red;
+}
+
+.cell{
+    flex-direction: row; 
+    height: 2rem; 
+    width: 2rem; 
+    border: 2px solid gray;
+}

@@ -1,0 +1,7 @@
+export const SHIP_LENGTH = {
+    SMALL_SHIP: 2,
+    DESTROYER: 3,
+    SUBMARINE: 3,
+    BATTLE_SHIP: 4,
+    AIRCRAFT_CARRIER: 5
+};
